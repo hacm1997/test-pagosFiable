@@ -8,6 +8,7 @@
     "start:dev": "node src/app.js",
     "dev": "set NODE_ENV=development&& npm run start:dev",
     "start:prod": "node src/app.js",
+    "start": "node src/app.js",
     "prod": "npm run build::prod && set NODE_ENV=production&& npm run start:prod"
   },
   "author": "Heiner Acosta",
