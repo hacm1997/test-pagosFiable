@@ -6,6 +6,7 @@ const mongoHost = process.env.NODE_MONGO_HOST;
 const mongoPort = process.env.NODE_MONGO_PORT;
 const replicaSet = process.env.NODE_MONGO_REPLICA_SET;
 
+console.log(mongoUser)
 const mongoURI = `mongodb://${mongoUser}:${mongoPassword}@${mongoHost}:${mongoPort},${mongoHost}:${mongoPort},${mongoHost}:${mongoPort}/?replicaSet=${replicaSet}&ssl=true&authSource=admin`;
 console.log(process.env.NODE_ENV)
 mongoose.connect(mongoURI, {
