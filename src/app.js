@@ -20,7 +20,7 @@ app.use((req, res, next) => {
 app.use('/', productRoutes);
 app.use('/', customerRoutes);
 
-const PORT = process.env.NODE_PORT || 3000;
+const PORT = process.env.NODE_PORT || '5000';
 app.listen(PORT, () => {
     console.log(`Servidor corriendo en el puerto ${PORT}`);
 });
