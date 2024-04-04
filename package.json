@@ -1,0 +1,26 @@
+{
+  "name": "sneakers_store",
+  "version": "1.0.0",
+  "description": "sneakers stores test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "node src/app.js",
+    "dev": "set NODE_ENV=development&& npm run start:dev",
+    "start:prod": "node src/app.js",
+    "prod": "npm run build::prod && set NODE_ENV=production&& npm run start:prod"
+  },
+  "author": "Heiner Acosta",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.5.0",
+    "mongoose": "^8.3.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0"
+  }
+}
